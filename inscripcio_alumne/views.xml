@@ -1,0 +1,34 @@
+<odoo>
+
+    <record id="view_tree_primer" model="ir.ui.view">
+        <field name="name">view_tree_primer</field>
+        <field name="model">dam</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+				<field name="lastname"/>
+				<field name="Genere"/>
+				<field name="Edat"/>
+				<field name="DNI"/>
+                <field name="checkbox1"/>
+                <field name="checkbox2"/>
+                <field name="checkbox3"/>
+                <field name="checkbox4"/>
+                <field name="checkbox5"/>
+                <field name="date"/>
+                <field name="DNI_copia"/>
+                <field name="Image"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_view_primer" model="ir.actions.act_window">
+        <field name="name">Llista alumnes</field>
+        <field name="res_model">dam</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_primer" parent="" action= "inscripcio_alumne.action_view_primer"/>
+
+</odoo>
